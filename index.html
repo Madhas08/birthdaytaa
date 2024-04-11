@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>happybhirtdiee</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Noto+Serif:wght@650&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <audio id="musik" autoplay>
+    <source src="musik.mp3" type="audio/mpeg">
+  </audio>
+  <h2>dear Sinta Pricellia Nuraeni</h2>
+  <img src="potosin.jpg" alt="potos">
+  <h4>Banyak sudah yang dilalui tanpa kamu sadari</h4>
+  <h4>Jika perjalananmu melelahkan, berhentilah sejenak</h4>
+  <h4>Lihatlah seberapa jauh kakimu melangkah</h4>
+  <h4>Mungkin kau akan temukan rasa syukur dan semangat.</h4>
+  <h4>Tak usah risau dengan hasil yang belum kamu dapat</h4>
+  <h4>Karena apa yang menjadi milikmu</h4>
+  <h4>Bagaimanapun caranya akan menjadi milikmu.</h4>
+  <h4>Bersabar dan berjuanglah</h4>
+  <h4>Percayalah pada dirimu sendiri</h4>
+  <h4>Kamu akan hebat dari yang kamu kira.</h4>
+  <h4>Semoga ujung ceritanya akan indah dan berkesan</h4>
+  <h4>Selamat ulang tahun</h4>
+  <h4>Semoga kesehatan dan kebahagiaan selalu dekat denganmu</h4>
+
+  <div id="video-container">
+    <video id="video" src="video.mp4" controls style="width:125%; height:auto; display:none;"></video>
+    <button id="play-button">next</button>
+  </div>
+
+  <script>
+    var video = document.getElementById('video');
+    var playButton = document.getElementById('play-button');
+    var musik = document.getElementById('musik');
+
+    playButton.addEventListener('click', function () {
+      video.style.display = 'block'; // Menampilkan video
+      musik.pause(); // Memberhentikan musik
+      video.play(); // Memainkan video
+      playButton.style.display = 'none'; // Menghilangkan tombol setelah video dimulai
+    });
+
+    video.addEventListener('ended', function () {
+      musik.play(); // Memainkan kembali musik ketika video selesai diputar
+      video.style.display = 'none'; // Menyembunyikan video setelah selesai diputar
+    });
+  </script>
+</body>
+
+</html>

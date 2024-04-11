@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+    /* background-color: #4b699b; */
+    background-image: url('backg.jpg');
+    background-size: 150%;
+    color: white;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+  img {
+    max-width: 70%;
+    height: auto;
+  }
+  
+  /* button {
+    border-radius: 20px;
+    width: 80px;
+    height: 50px;
+    color: white;
+    background-color: #058fbd;
+  }
+  
+  button:hover {
+    background-color: #25276a;
+  } */
+  
+  #video-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+  }
+  
+  /* Styling for the video element */
+  #video {
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* menyembunyikan video secara default */
+  }
+  
+  /* Styling for the play button */
+  #play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 80px;
+    height: 50px;
+    color: white;
+    background-color: #973f7b;
+  }
+  
+  #play-button:hover {
+    background-color: #25276a;
+  }
